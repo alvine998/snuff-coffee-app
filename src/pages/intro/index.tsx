@@ -34,7 +34,7 @@ export default function Intro({ navigation }: any) {
                             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "center", gap: normalize(10), marginTop: normalize(80) }}>
                                 {
                                     intros?.map((val: any, idx: number) => (
-                                        <View>
+                                        <View key={idx}>
                                             {
                                                 i == idx ?
                                                     <View key={idx} style={{ width: normalize(15), height: normalize(15), borderRadius: 15, backgroundColor: "white" }}></View>
